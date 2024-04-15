@@ -7,6 +7,7 @@ const inputBox = document.getElementById('inputBox');
 const btn = document.getElementById('btn');
 const img = document.getElementById('img');
 const call = document.getElementById('name');
+const call2 = document.querySelectorAll('#unname');
 const abilities = document.getElementById('abilities');
 const img2 = document.getElementById('img2');
 
@@ -26,10 +27,18 @@ async function fetchData() {
     const data = await response.json();
 
     call.innerHTML = data.name;
+    call.style.display = 'inline';
+    call2.forEach((e) => {
+      e.style.display = 'inline';
+    });
     abilities.innerHTML = data.abilities[0].ability.name;
+    abilities.style.display = 'inline';
     abilities.innerHTML = data.abilities[1].ability.name;
     img.src = data.sprites.front_default;
+    img.style.display = 'inline';
     img2.src = data.sprites.back_default;
+    img2.style.display = 'inline';
+
     console.log(data);
   } catch (error) {
     console.log(error);
