@@ -4,7 +4,6 @@
 //   .catch((error) => console.error(error));
 
 fetchData();
-
 async function fetchData() {
   try {
     const response = await fetch(
