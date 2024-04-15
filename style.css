@@ -9,6 +9,32 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  line-height: 39px;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid rgba(56, 55, 55, 0.411);
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+button {
+  background: transparent;
+  padding: 10px;
+  font-weight: 500;
+  font-weight: bold;
+  border: 1px solid rgba(86, 86, 86, 0.479);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-weight: 500;
 }
 
 img {
