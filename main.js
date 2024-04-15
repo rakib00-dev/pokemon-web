@@ -26,6 +26,7 @@ async function fetchData() {
     const data = await response.json();
 
     call.innerHTML = data.name;
+    abilities.innerHTML = data.abilities[0].ability.name;
     abilities.innerHTML = data.abilities[1].ability.name;
     img.src = data.sprites.front_default;
     img2.src = data.sprites.back_default;
