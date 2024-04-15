@@ -30,13 +30,16 @@ button {
 }
 
 h1 {
+  display: none;
   font-size: 25px;
 }
 
 h2 {
+  display: none;
   font-weight: 500;
 }
 
 img {
+  display: none;
   height: 150px;
 }
