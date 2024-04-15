@@ -10,7 +10,7 @@ const call = document.getElementById('name');
 const abilities = document.getElementById('abilities');
 const img2 = document.getElementById('img2');
 
-btn.addEventListener('click', fetchData);
+btn.addEventListener('click', pic);
 
 fetchData();
 async function fetchData() {
@@ -33,5 +33,11 @@ async function fetchData() {
     console.log(data);
   } catch (error) {
     console.log(error);
+  }
+}
+
+function pic() {
+  if (inputBox.value.toLowerCase() === 'musa') {
+    img.src = 'WIN_20240415_20_12_59_Pro.jpg';
   }
 }
