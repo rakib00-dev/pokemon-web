@@ -10,7 +10,7 @@ const call = document.getElementById('name');
 const abilities = document.getElementById('abilities');
 const img2 = document.getElementById('img2');
 
-btn.addEventListener('click', pic);
+btn.addEventListener('click', fetchData);
 
 fetchData();
 async function fetchData() {
