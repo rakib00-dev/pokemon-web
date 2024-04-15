@@ -35,3 +35,32 @@ async function fetchData() {
     console.log(error);
   }
 }
+
+window.addEventListener('keydown', async (event) => {
+  switch (event.key) {
+    case 'Enter':
+      const take = inputBox.value.toLowerCase();
+
+      try {
+        const response = await fetch(
+          `https://pokeapi.co/api/v2/pokemon/${take}`
+        );
+
+        if (!response.ok) {
+          throw new Error('Could not Fetch resourse');
+        }
+
+        const data = await response.json();
+
+        call.innerHTML = data.name;
+        abilities.innerHTML = data.abilities[0].ability.name;
+        abilities.innerHTML = data.abilities[1].ability.name;
+        img.src = data.sprites.front_default;
+        img2.src = data.sprites.back_default;
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
+      break;
+  }
+});
