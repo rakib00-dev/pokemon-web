@@ -10,3 +10,7 @@ body {
   place-items: center;
   height: 100vh;
 }
+
+img {
+  height: 150px;
+}
