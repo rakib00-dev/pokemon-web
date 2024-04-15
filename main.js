@@ -35,9 +35,3 @@ async function fetchData() {
     console.log(error);
   }
 }
-
-function pic() {
-  if (inputBox.value.toLowerCase() === 'musa') {
-    img.src = 'WIN_20240415_20_12_59_Pro.jpg';
-  }
-}
